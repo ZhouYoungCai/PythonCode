@@ -61,3 +61,14 @@ else:
 	print("软件开发工程师")
 	if range == "高级":
 		print("高级软件开发工程师")
+a,b = 1,2
+if a>b:
+	school = "hogwarts1"
+else:
+	school = "hogwarts2"
+print(school)
+
+#上面的代码等同于下面这一段代码
+a,b = 1,2
+school = "hogwarts1" if a>b else "hogwarts2"
+print(school)
