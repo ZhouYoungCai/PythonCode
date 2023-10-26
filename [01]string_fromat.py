@@ -55,14 +55,17 @@
 # 	代码：
 # 		a = ["h","o","g","w","a","r","t","s"]
 # 		print("".join(a))
-#07、字符串常用操作之切分操作
-#根据split内容将字符串进行切分
+# 07、字符串常用操作之切分操作
+# 根据split内容将字符串进行切分
 # demo = "hogwarts school"
 # print(demo.split(" "))  #冒号中间是空格，就是以空格作为切分
 # 08、字符串常用API之replace
 # replace:将目标字符串替换成想要的字符串
 # 例如将school替换为top school：
-print("hogwarts school".replace("school","top school"))
-a = "my name is aaa"
-print(a.replace("aaa","张家辉"))
+# print("hogwarts school".replace("school","top school"))
+# a = "my name is aaa"
+# print(a.replace("aaa","张家辉"))
+# 09、字符串常用API之strip
+a = "  hogwarts top  school  "
+print(a.strip())   #去掉首尾的空格
 
