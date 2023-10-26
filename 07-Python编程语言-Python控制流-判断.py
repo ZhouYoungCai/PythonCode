@@ -10,9 +10,13 @@
 # 	if 判断条件:
 # 	# 执行语句需要注意缩进
 # 		执行语句
-Bob = "developer"
-if Bob == "developer":
+Bob = "软件开发"
+if Bob == "tester":
 	print("软件测试工程师")
+elif Bob == "yunwei":
+	print("运维工程师")
+else:
+	print("软件开发工程师")
 # 04、else 判断语句
 #
 # 	if 判断条件:
