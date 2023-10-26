@@ -10,13 +10,6 @@
 # 	if 判断条件:
 # 	# 执行语句需要注意缩进
 # 		执行语句
-Bob = "软件开发"
-if Bob == "tester":
-	print("软件测试工程师")
-elif Bob == "yunwei":
-	print("运维工程师")
-else:
-	print("软件开发工程师")
 # 04、else 判断语句
 #
 # 	if 判断条件:
@@ -56,3 +49,15 @@ else:
 # 		h = "变量2"
 # 	# 优化之后更简洁的写法
 # 	h = "变量1" if a>b else "变量2"
+Bob = "运维"
+range = "高级"
+if Bob == "tester":
+	print("软件测试工程师")
+	if range == "高级":
+		print("高级软件测试工程师")
+elif Bob == "运维" and range == "高级":
+		print("高级运维工程师")
+else:
+	print("软件开发工程师")
+	if range == "高级":
+		print("高级软件开发工程师")
