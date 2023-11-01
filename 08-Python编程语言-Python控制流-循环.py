@@ -90,16 +90,16 @@
 # 10、for 循环-实例
 # 	计算1~100 求和
 # 	使用分支结构实现1~100之间的偶数求和
-sum = 0
-for i in range(1,101):
-	if i%2 ==0:
-		sum = sum+i
-		print(sum)
-# 	不使用分支结构实现1~100之间的偶数求和
-sum = 0
-for i in range(2,101,2):
-	sum = sum+i
-	print(sum)
+# sum = 0
+# for i in range(1,101):
+# 	if i%2 ==0:
+# 		sum = sum+i
+# 		print(sum)
+# # 	不使用分支结构实现1~100之间的偶数求和
+# sum = 0
+# for i in range(2,101,2):
+# 	sum = sum+i
+# 	print(sum)
 # 11、while循环-实例
 # 	猜数字游戏
 # 	计算机出一个1~100之间的随机数由人来猜
@@ -119,4 +119,14 @@ for i in range(2,101,2):
 # 		break
 # 12、课后练习
 # 	不使用分支结构实现1~100之间的奇数求和
+# sum = 0
+# for i in range(1,101,2):
+# 	sum = sum+i
+# 	print(sum)
 # 	使用while语句实现1~100之间的奇数求和
+sum = 0
+n = 99
+while n > 0:
+	sum = sum + n
+	n = n - 2
+	print(sum)
