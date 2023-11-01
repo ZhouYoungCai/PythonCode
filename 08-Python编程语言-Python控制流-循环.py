@@ -47,7 +47,7 @@
 # 	print(count)
 # 07、break-跳出整个循环体
 # 	# while循环
-count = 0
+#count = 0
 # while循环条件，满足条件执行循环体内代码
 # while count<5:
 # # count 变量+1，否则会进入死循环
@@ -55,7 +55,7 @@ count = 0
 # 	print(count)
 # 	if count == 3:
 # 		break
-list_demo = [ 1, 2, 3, 4, 5, 6]
+#list_demo = [ 1, 2, 3, 4, 5, 6]
 # 循环遍历列表
 # for i in list_demo:
 #   # 如果i 等于三，那么跳出整个for循环
@@ -90,12 +90,33 @@ list_demo = [ 1, 2, 3, 4, 5, 6]
 # 10、for 循环-实例
 # 	计算1~100 求和
 # 	使用分支结构实现1~100之间的偶数求和
+sum = 0
+for i in range(1,101):
+	if i%2 ==0:
+		sum = sum+i
+		print(sum)
 # 	不使用分支结构实现1~100之间的偶数求和
+sum = 0
+for i in range(2,101,2):
+	sum = sum+i
+	print(sum)
 # 11、while循环-实例
 # 	猜数字游戏
 # 	计算机出一个1~100之间的随机数由人来猜
 # 	计算机根据人猜的数字分别
 # 	给出提示大一点/小一点/猜对了
+# import random
+# computer_num = random.randint(1,100)
+# #print("computer_num",computer_num)
+# while True:
+# 	people_num = int(input("请输入数字："))
+# 	if computer_num > people_num:
+# 		print("大一点")
+# 	elif computer_num < people_num:
+# 		print("小一点")
+# 	else:
+# 		print("猜对了")
+# 		break
 # 12、课后练习
 # 	不使用分支结构实现1~100之间的奇数求和
 # 	使用while语句实现1~100之间的奇数求和
