@@ -33,35 +33,36 @@
 # 	print(i)
 #
 # 	# for 循环结合 range函数
-for i in range(1, 100, 2):
-	print(i)
+# for i in range(1, 100, 2):
+# 	print(i)
 # 05、while 循环
 # 	满足条件，进入循环
 # 	需要设定好循环结束条件
 # 06、while循环示例
-#
-# 	count = 0
-# 	# while循环条件，满足条件执行循环体内代码
-# 	while count<5:
-# 	  # count 变量+1，否则会进入死循环
-# 	  count += 1
+# count = 0
+# # 	# while循环条件，满足条件执行循环体内代码
+# while count<5:
+# # count 变量+1，否则会进入死循环
+# 	count += 1
+# 	print(count)
 # 07、break-跳出整个循环体
 # 	# while循环
-# 	count = 0
-# 	# while循环条件，满足条件执行循环体内代码
-# 	while count<5:
-# 	  # count 变量+1，否则会进入死循环
-# 	  count += 1
-# 	  if count == 3:
+count = 0
+# while循环条件，满足条件执行循环体内代码
+# while count<5:
+# # count 变量+1，否则会进入死循环
+# 	count += 1
+# 	print(count)
+# 	if count == 3:
 # 		break
-# 	list_demo = [ 1, 2, 3, 4, 5, 6]
-# 	# 循环遍历列表
-# 	for i in list_demo:
-# 	  # 如果i 等于三，那么跳出整个for循环
-# 	  # 不再打印后面的4、5、6
-# 	  print(i)
-# 	  if i == 3:
-# 		break
+list_demo = [ 1, 2, 3, 4, 5, 6]
+# 循环遍历列表
+for i in list_demo:
+  # 如果i 等于三，那么跳出整个for循环
+  # 不再打印后面的4、5、6
+	print(i)
+	if i == 3:
+		break
 # 08、break-跳出整个循环体
 # 	# while循环
 # 	count = 0
