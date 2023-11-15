@@ -39,5 +39,6 @@ print(f"list10.extend后的结果是：",list10)
 
 list14 = [0,1,2]
 print("插入前:",list14)  # 打印 [0，1，2]
-list14.insert(0,'hogwarts')
-print("插入后:",list14) # 在索引0的位置插入元,打印 ['hogwarts’，0，1，2]
+list14.insert(0,"hogwarts")
+print("插入后:",list14) # 在索引0的位置插入元素,打印 ['hogwarts’，0，1，2]
+
