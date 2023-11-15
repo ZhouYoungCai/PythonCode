@@ -42,3 +42,9 @@ print("插入前:",list14)  # 打印 [0，1，2]
 list14.insert(0,"hogwarts")
 print("插入后:",list14) # 在索引0的位置插入元素,打印 ['hogwarts’，0，1，2]
 
+letters = ['h', 'o', 'g', 'w', 'a', 'r', 't', 's']
+n1 = letters.pop(3)
+print(f"n1的值是：",n1)  # 打印w,# 传入索引3，弹出元素,列表方法pop()的使用：弹出并返回所指定索引的元素
+n2 = letters.pop()
+print(f"n2的值是：",n2)  # 打印s,不传参数，默认弹出末尾元素,列表方法pop()的使用：弹出并返回所指定索引的元素
+print(f"letters的最新值是：",letters)   # 弹出所指定索引的元素，w和s，打印['h', 'o', 'g', 'a', 'r', 't']
