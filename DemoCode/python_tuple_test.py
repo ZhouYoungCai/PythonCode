@@ -11,3 +11,6 @@ print(type(t1))
 t2 = tuple([1, 2, 3])
 print(t2)
 print(type(t2))  # 3、通过构造函数tuple()
+
+tup6 = (1,)
+print(type(tup6),tup6)  #注意，但元素元组，逗号不可缺少,不加逗号会认为是int类型
