@@ -61,7 +61,7 @@ li.remove(2)
 print(li)  # 打印 [1,3,2,1]，移除第一个2
 
 li = [1,2,3]
-li.remove(100)  # 删除不存在的元素，会报valueError错误
+#li.remove(100)  # 删除不存在的元素，会报valueError错误
 
 nums12 = [2, 4, 3, 1, 5]
 nums12.sort()
