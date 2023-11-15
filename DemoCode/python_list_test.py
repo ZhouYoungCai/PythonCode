@@ -78,3 +78,19 @@ print(nums13)  # 打印 [5，4，3，2. 1],指定reverse=True，降序
 nums16 = [8, 1, 5, 2, 77]
 nums16.reverse()
 print(nums16)  # 打印[77，2，5，1，8],反转顺序
+
+li_2d = [['a', 'b', 'c'], [1, 2, 3]]
+print(type(li_2d))  # 打印<class 'list'>
+print(len(li_2d))  # 打印 2  #创建嵌套列表
+
+print(li_2d[0][2])  # 打印'c',访问嵌套列表中的元素
+
+# 实例:将 1-10 中的所有数平方后组成新的列表
+result1 = []
+for ele in range(1, 11):
+    if ele % 2 == 0:
+        result1.append(ele ** 2)
+print(f"result1的值是：", result1)  # 打印 [4，16，36，64，100],传统解决方案
+
+result2 = [ele ** 2 for ele in range(1, 11) if ele % 2 == 0]
+print(f"result2的值是：", result2)  # 打印[4,16,36,64,100],使用列表推导式
