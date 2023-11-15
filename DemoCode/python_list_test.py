@@ -36,3 +36,8 @@ list9.extend(list10)  # extend():extend方法将一个可迭代对象的所有�
 list10.extend("789")  # extend():extend方法将一个可迭代对象的所有元素，添加到列表末尾
 print(f"list9.extend后的结果是：",list9)
 print(f"list10.extend后的结果是：",list10)
+
+list14 = [0,1,2]
+print("插入前:",list14)  # 打印 [0，1，2]
+list14.insert(0,'hogwarts')
+print("插入后:",list14) # 在索引0的位置插入元,打印 ['hogwarts’，0，1，2]
