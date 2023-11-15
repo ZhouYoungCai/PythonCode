@@ -62,3 +62,15 @@ print(li)  # 打印 [1,3,2,1]，移除第一个2
 
 li = [1,2,3]
 li.remove(100)  # 删除不存在的元素，会报valueError错误
+
+nums = [2, 4, 3, 1, 5]
+nums.sort()
+print(nums)  # 打印 [1，2，3，4，5]，不传参数，默认升序，数字从小到大排列
+
+words = ['Python', 'Java', 'R', 'Go']
+words.sort(key=len)
+print(words)  # 打印['R','Go','Java','Python'],指定key=len，按元素的长度排序
+
+nums = [2, 4, 3, 1, 5]
+nums.sort(reverse=True)
+print(nums)  # 打印 [5，4，3，2. 1],指定reverse=True，降序
