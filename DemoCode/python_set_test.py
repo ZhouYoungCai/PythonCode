@@ -24,19 +24,27 @@ print(f"这是set6，1 in set6",1 in set6)
 print(f"这是set6，100 not in set6",100 not in set6)
 
 
-"""集合方法"""
+"""
+集合方法，一共6个；
+add()：将单个对象添加到集合中
+update()：批量添加来自可迭代对象中的所有元素
+remove()：从集合中移除指定元素
+discard()：从集合中移除指定对象
+pop()：随机从集合中移除并返回一个元素
+clear()：清空集合，移除所有元素
+"""
 set7 = set()
-'''add(item)'''
+'''1、add方法：add(item)'''
 set7.add(1)
 set7.add(2)
 set7.add('hogwarts')
-print(f"这是set7", type(set7))
-'''update(iterable)'''
+print(f"add方法，这是set7", set7,type(set7))
+'''2、update方法：update(iterable)'''
 set7.update('hogwarts')
 print(f"这是set7",set7, type(set7))
 set7.update([1, 2, 3])
 print(f"这是set7",set7, type(set7))
-'''remove(item)'''
+'''3、remove方法：remove(item)'''
 # 1、元素存在
 set8 = {1, 2, 'hogwarts'}
 set8.remove(1)
@@ -44,18 +52,18 @@ print(f"这是set8",set8)
 # 2、元素不存在会报错
 # set8.remove(100)
 
-'''discard(item)'''
+'''4、discard方法：discard(item)'''
 # 1、元素存在
 set8.discard(1)
 print(f"这是set8",set8)
 # # 2、元素不存在
 # set8.discard(100)
 
-'''pop()'''
+'''5、pop方法：pop()'''
 set9 = {1, 2, 'hogwarts'}
 set9.pop()
 print(f"这是set9",set9)
-'''clear()'''
+'''6、clear方法：clear()'''
 set10 = {1, 2, 3, 4, 5}
 set10.clear()
 print(f"这是set10",set10)
