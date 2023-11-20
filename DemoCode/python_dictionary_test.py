@@ -30,31 +30,36 @@ print(dc6)
 
 """
 字典方法
-
+keys()：返回由字典键组成的一个新视图对象
+values()：返回由字典值组成的一个新视图对象
+items()：返回由字典项 ((键, 值) 对) 组成的一个新视图对象
+get()：获取指定 key 关联的 value 值
+update()：使用来自 dict 的键/值对更新字典，覆盖原有的键和值
+pop()：删除指定 key 的键值对，并返回对应 value 值
 """
-# dc7 = {"name": "Harry Potter", "age": 18}
+dc7 = {"name": "Harry Potter", "age": 18}
 '''keys(),values(),items()'''
-# print(dc7.keys())
-# print(dc7.values())
-# print(dc7.items())
-#
-# print(list(dc7.keys()))
-# print(list(dc7.values()))
-# print(list(dc7.items()))
+print(dc7.keys())
+print(dc7.values())
+print(dc7.items())
+
+print(list(dc7.keys()))
+print(list(dc7.values()))
+print(list(dc7.items()))
 
 '''get()'''
-# dc8 = {"name": "Harry Potter", "age": 18}
-# # 1、访问存在的key
-# print(dc8.get('name'))
-# print(dc8.get('age'))
-# # 2、访问不存在的key
-# print(dc8.get('hobby'))
+dc8 = {"name": "Harry Potter", "age": 18}
+# 1、访问存在的key
+print(dc8.get('name'))
+print(dc8.get('age'))
+# 2、访问不存在的key
+print(dc8.get('hobby'))
 
 '''update()'''
-# dc9 = {"name": "Harry Potter", "age": 18}
-# data = {"age": 20, "hobby": "magic"}
-# dc9.update(data)
-# print(dc9)
+dc9 = {"name": "Harry Potter", "age": 18}
+data = {"age": 20, "hobby": "magic"}
+dc9.update(data)
+print(dc9)
 
 '''pop()'''
 dc10 = {"name": "Harry Potter", "age": 18}
