@@ -74,11 +74,11 @@ b = {5, 1, 4}
 # 1、交集运算 intersection &
 print(f"交集运算1",a.intersection(b))
 print(f"交集运算1",a & b)
-# 2、并集运算 union |
+# 2、并集运算 union或|
 print(f"并集运算1",a.union(b))
 print(f"并集运算2",a | b)
 
-# 3、差集运算 difference -
+# 3、差集运算 difference或-号
 print(f"差集运算1",a.difference(b))
 print(f"差集运算2",a - b)
 
