@@ -2,7 +2,8 @@
 # @Author : feier
 # @File : func_params.py
 
-# *args 接收任意多个实际参数，并将其放到一个元组中
+# *args 接收任意多个实际参数
+# 并将其放到一个元组中
 def print_language(*args):
     print(args)
     for i in args:
@@ -10,8 +11,8 @@ def print_language(*args):
 
 
 # 调用函数，把不同数量的参数传递进去，用位置参数
-# print_language("python", "java")
-# print_language("python", "java", "php", "go")
+print_language("python", "java")
+print_language("python", "java", "php", "go")
 
 lan = ["python", "java", "php"]
 # 等价为 print_language("python", "java", "php")
