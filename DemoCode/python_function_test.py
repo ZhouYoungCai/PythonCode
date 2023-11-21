@@ -5,7 +5,7 @@
 # 定义函数
 def func_demo():
     # 函数体
-    print("这是一个函数")
+    print(f"这是一个函数")
 
 
 def func_with_params(a, b, c):
