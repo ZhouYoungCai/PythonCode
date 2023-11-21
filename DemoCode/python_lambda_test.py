@@ -12,7 +12,7 @@ def circle_area(r):
     '''
     result = math.pi*r*r
     return result
-
+#首先定义一个函数，然后调用函数
 r = 10
 # 用 lambda 表达式实现
 result = lambda r:math.pi*r*r
