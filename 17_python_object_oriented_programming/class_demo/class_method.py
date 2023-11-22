@@ -14,7 +14,6 @@ class Human:
         print("这是类方法")
         cls.population += 1
 
-
 # 通过类名访问类方法
 Human.born()
 print(Human.population)
