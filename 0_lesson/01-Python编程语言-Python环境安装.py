@@ -20,7 +20,7 @@
 	下载 exe 安装程序
 	运行安装包
 	检查是否安装成功
-7、安装目录：C:\Users\zhouyongcai\AppData\Local\Programs\Python\Python38
+7、安装目录：C:\Users\zhouyongcai\AppData\Local\Programs\Python\Python310
 	
 
 
