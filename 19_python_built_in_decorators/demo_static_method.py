@@ -21,3 +21,24 @@ game1 = Game("Bob", "Mary")
 game2 = Game("Mike", "Henry")
 game1.fight()
 game2.fight()
+
+'''
+实际案例
+下面的代码实现的需求是格式化输出时间
+如果现在需求变更，输入 年、月、日 没法保证格式统一，
+可能是json，可能是其他格式的字符串，在不修改构造函数的前提下，如何更改代码
+'''
+class DateFormat:
+    def __init__(self, year=0, month=0, day=0):
+        self.year = year
+        self.month = month
+        self.day = day
+
+    def out_date(self):
+        return f"输入的时间为{self.year}年，{self.month}月，{self.day}日"
+
+
+year, month, day = 2017, 7, 1
+
+demo = DateFormat(year, month, day)
+print(demo.out_date())
