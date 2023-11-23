@@ -1,4 +1,7 @@
-"""普通方法"""
+#coding:utf-8
+"""
+普通方法
+"""
 # #1. 定义
 # class MethodsDemo:
 #     param_a = 0 #类变量

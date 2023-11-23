@@ -1,3 +1,7 @@
+#coding:utf-8
+'''
+类方法
+'''
 class DateFormat:
     def __init__(self, year=0, month=0, day=0):
         self.year = year
