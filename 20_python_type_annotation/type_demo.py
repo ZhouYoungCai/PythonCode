@@ -3,9 +3,9 @@ __author__ = 'hogwarts_xixi'
 """
 # 类型提示功能
 # 用法一：为参数与返回数据指定类型
-# def greeting(name: str,age) -> str:
-#     return 'Hello '+name
-
+def greeting(name: str,age) -> str:
+    return 'Hello '+name
+print(greeting('python','java'))
 # 用法二：为类型起别名
 from typing import List
 
