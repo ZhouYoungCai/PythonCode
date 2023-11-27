@@ -2,10 +2,10 @@
 __author__ = 'hogwarts_xixi'
 """
 import datetime
-# 时间格式
-now = datetime.datetime.now()
-# 转成字符串
-c_time = now.strftime("%Y%m%d_%H%M%S")
+
+now = datetime.datetime.now()  # 时间格式
+
+c_time = now.strftime("%Y%m%d_%H%M%S")  # 转成字符串
 print(c_time)
 
 log_name = c_time+'.log'
