@@ -3,36 +3,33 @@
 # @File : re_demo.py
 import re
 
-# 匹配包含 hogwarts 的字符串
-# pattern = r"hogwarts"
+pattern = r"hogwarts"  # 匹配包含 hogwarts 的字符串
 
-# 转换为正则对象
-# prog = re.compile(pattern)
+prog = re.compile(pattern)  # 转换为正则对象
 
-# 匹配以 hog 开头的字符串
-# pattern = r"hog\w+"
+pattern = r"hog\w+"  # 匹配以 hog 开头的字符串
 
-# s1 = "Hogwarts is a magic school"
-# match1 = re.match(pattern, s1, re.I)
-# match1 = re.search(pattern, s1, re.I)
-# print(match1)
-# print(f"匹配值的起始位置为：{match1.start()}")
-# print(f"匹配值的结束位置为：{match1.end()}")
-# print(f"匹配位置的元组为：{match1.span()}")
-# print(f"要匹配的字符串为：{match1.string}")
-# print(f"匹配的数据为：{match1.group()}")
-# match_list1 = re.findall(pattern, s1, re.I)
-# print(match_list1)
+s1 = "Hogwarts is a magic school"
+match1 = re.match(pattern, s1, re.I)
+match1 = re.search(pattern, s1, re.I)
+print(match1)
+print(f"匹配值的起始位置为：{match1.start()}")
+print(f"匹配值的结束位置为：{match1.end()}")
+print(f"匹配位置的元组为：{match1.span()}")
+print(f"要匹配的字符串为：{match1.string}")
+print(f"匹配的数据为：{match1.group()}")
+match_list1 = re.findall(pattern, s1, re.I)
+print(match_list1)
 
-# s2 = "I like hogwarts hogwarts"
-# match2 = re.match(pattern, s2, re.I)
-# match2 = re.search(pattern, s2, re.I)
-# print(match2)
-# match_list2 = re.findall(pattern, s2, re.I)
-# print(match_list2)
+s2 = "I like hogwarts hogwarts"
+match2 = re.match(pattern, s2, re.I)
+match2 = re.search(pattern, s2, re.I)
+print(match2)
+match_list2 = re.findall(pattern, s2, re.I)
+print(match_list2)
 
-# 匹配手机号码
-pattern = r"1[34578]\d{9}"
+
+pattern = r"1[34578]\d{9}"  # 匹配手机号码
 
 s1 = "中奖号码 123456，联系电话 15611111111"
 result = re.sub(pattern, '1xxxxxxxxxx', s1)
