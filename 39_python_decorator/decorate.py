@@ -6,42 +6,42 @@
 def hogwarts():
     print("霍格沃兹测试学社")
 hogwarts()
-# def hogwarts2():
-#     print("霍格沃兹测试学社2部")
+def hogwarts2():
+    print("霍格沃兹测试学社2部")
 
-# # 第二步优化，把中间的执行函数，使用参数代替
-# def function_tips(func):
-#     print("函数开始执行")
-#     # 不再是写死的任何的一个函数，而是任意外部传入的函数对象
-#     func()
-#     print("函数结束执行")
-#
-# # 需要传入一个函数对象
-# function_tips(hogwarts2)
+# 第二步优化，把中间的执行函数，使用参数代替
+def function_tips(func):
+    print("函数开始执行")
+    # 不再是写死的任何的一个函数，而是任意外部传入的函数对象
+    func()
+    print("函数结束执行")
 
-# 使用装饰器实现函数在开始执行与结束执行的时候分别打印提示信息
+# 需要传入一个函数对象
+function_tips(hogwarts2)
 
-# 第一步，定义两个函数，一个内函数，一个外函数
-# 第五步，在装饰器执行过程中，会自动传入一个参数,参数就是被装饰函数的函数对象
-# def timer(func):
-#     def inner():
-#         # 第二步，在内函数添加装饰器的逻辑
-#         print("函数开始执行")
-#         func() #第六步 添加被装饰函数的执行步骤
-#         print("函数结束执行")
-#     # 第三步 把内函数的函数对象return 出去
-#     return inner
-#
-# # 第四步，装饰器的使用
-# @timer
-# def hogwarts():
-#     print("霍格沃兹测试学社")
-#
-# @timer
-# def hogwarts2():
-#     print("霍格沃兹测试学社二部")
-#
-# hogwarts2()
+使用装饰器实现函数在开始执行与结束执行的时候分别打印提示信息
+
+#第一步，定义两个函数，一个内函数，一个外函数
+#第五步，在装饰器执行过程中，会自动传入一个参数,参数就是被装饰函数的函数对象
+def timer(func):
+    def inner():
+        # 第二步，在内函数添加装饰器的逻辑
+        print("函数开始执行")
+        func() #第六步 添加被装饰函数的执行步骤
+        print("函数结束执行")
+    # 第三步 把内函数的函数对象return 出去
+    return inner
+
+# 第四步，装饰器的使用
+@timer
+def hogwarts():
+    print("霍格沃兹测试学社")
+
+@timer
+def hogwarts2():
+    print("霍格沃兹测试学社二部")
+
+hogwarts2()
 
 
 # 三步走： 1. 定义一个外函数，外函数有一个形参，接受被装饰的函数对象
