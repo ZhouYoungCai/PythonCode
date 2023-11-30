@@ -3,9 +3,9 @@
 函数在开始执行与结束执行的时候分别打印提示信息
 """
 
-# def hogwarts():
-#     print("霍格沃兹测试学社")
-#
+def hogwarts():
+    print("霍格沃兹测试学社")
+hogwarts()
 # def hogwarts2():
 #     print("霍格沃兹测试学社2部")
 

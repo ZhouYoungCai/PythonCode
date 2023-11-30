@@ -7,7 +7,7 @@ def test_timeout_4s():
     url = "http://httpbin.org/delay/3"
 
     # todo 设置超时时间4秒
-    resp = pm.request('GET',url, timeout=2.0)
+    resp = pm.request('GET',url, timeout=5.0)
     print(resp.status)
 
 
