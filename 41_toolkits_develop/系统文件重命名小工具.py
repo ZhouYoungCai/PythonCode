@@ -1,3 +1,4 @@
+#系统文件批量重命名小工具
 import os
 from colorama import init, Fore, Style
 
