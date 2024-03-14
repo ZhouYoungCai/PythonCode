@@ -7,14 +7,14 @@ import sys
 
 print(sys.version)  # 返回 Python 解释器版本
 print(sys.platform)  # 返回操作系统平台名称
-print(sys.modules)  # 返回已导入的模块信息  # 返回外部向程序传递的参数
-print(sys.modules.keys())
+print(sys.modules)  # 返回已导入的模块信息
+print(sys.modules.keys())  # 返回外部向程序传递的参数
 print(sys.path)  # 返回导包的搜索路径列表
 
 my_dir = os.path.dirname(os.path.abspath(__file__)) + "/hello"
 sys.path.append(my_dir)
 
-hello()
+#hello()
 print(sys.path)
 
 """sys模块常用方法"""
